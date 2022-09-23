@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.purbon.kafka.policy.KafkaPolicyEngineTest" time="0.205" tests="2" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="gopherProxySet" value="false"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/pere/work/gitops/policy-engine/core/target/test-classes:/Users/pere/work/gitops/policy-engine/core/target/classes:/Users/pere/.m2/repository/junit/junit/3.8.1/junit-3.8.1.jar:/Users/pere/.m2/repository/org/antlr/antlr4-runtime/4.7.1/antlr4-runtime-4.7.1.jar:/Users/pere/.m2/repository/org/projectlombok/lombok/1.18.24/lombok-1.18.24.jar:/Users/pere/.m2/repository/org/apache/logging/log4j/log4j-core/2.19.0/log4j-core-2.19.0.jar:/Users/pere/.m2/repository/org/apache/logging/log4j/log4j-api/2.19.0/log4j-api-2.19.0.jar:/Users/pere/.m2/repository/org/slf4j/slf4j-api/2.0.1/slf4j-api-2.0.1.jar:/Users/pere/.m2/repository/org/slf4j/slf4j-reload4j/2.0.1/slf4j-reload4j-2.0.1.jar:/Users/pere/.m2/repository/ch/qos/reload4j/reload4j/1.2.22/reload4j-1.2.22.jar:/Users/pere/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.12.6.redhat-00002/jackson-annotations-2.12.6.redhat-00002.jar:/Users/pere/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.12.6.1-redhat-00004/jackson-databind-2.12.6.1-redhat-00004.jar:/Users/pere/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-yaml/2.12.6.redhat-00001/jackson-dataformat-yaml-2.12.6.redhat-00001.jar:/Users/pere/.m2/repository/org/yaml/snakeyaml/1.27.0.redhat-00001/snakeyaml-1.27.0.redhat-00001.jar:/Users/pere/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.12.6.redhat-00001/jackson-datatype-jsr310-2.12.6.redhat-00001.jar:/Users/pere/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.12.6.redhat-00001/jackson-datatype-jdk8-2.12.6.redhat-00001.jar:/Users/pere/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.12.6.redhat-00002/jackson-core-2.12.6.redhat-00002.jar:/Users/pere/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.8.1/junit-jupiter-engine-5.8.1.jar:/Users/pere/.m2/repository/org/junit/platform/junit-platform-engine/1.8.1/junit-platform-engine-1.8.1.jar:/Users/pere/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/pere/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.8.1/junit-jupiter-api-5.8.1.jar:/Users/pere/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/pere/.m2/repository/org/junit/platform/junit-platform-commons/1.8.1/junit-platform-commons-1.8.1.jar:/Users/pere/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.8.1/junit-jupiter-params-5.8.1.jar:/Users/pere/.m2/repository/org/junit/platform/junit-platform-suite/1.8.1/junit-platform-suite-1.8.1.jar:/Users/pere/.m2/repository/org/junit/platform/junit-platform-suite-api/1.8.1/junit-platform-suite-api-1.8.1.jar:/Users/pere/.m2/repository/org/junit/platform/junit-platform-suite-engine/1.8.1/junit-platform-suite-engine-1.8.1.jar:/Users/pere/.m2/repository/org/junit/platform/junit-platform-suite-commons/1.8.1/junit-platform-suite-commons-1.8.1.jar:/Users/pere/.m2/repository/org/junit/platform/junit-platform-launcher/1.8.1/junit-platform-launcher-1.8.1.jar:"/>
+    <property name="java.vm.vendor" value="Azul Systems, Inc."/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="http://www.azul.com/"/>
+    <property name="user.timezone" value=""/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="GB"/>
+    <property name="sun.boot.library.path" value="/Users/pere/.sdkman/candidates/java/11.0.15-zulu/zulu-11.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/pere/work/gitops/policy-engine/core/target/surefire/surefirebooter14250965459131593750.jar /Users/pere/work/gitops/policy-engine/core/target/surefire 2022-09-23T16-00-15_128-jvmRun1 surefire7596236113451358963tmp surefire_06214916641291828568tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/pere/work/gitops/policy-engine/core/target/test-classes:/Users/pere/work/gitops/policy-engine/core/target/classes:/Users/pere/.m2/repository/junit/junit/3.8.1/junit-3.8.1.jar:/Users/pere/.m2/repository/org/antlr/antlr4-runtime/4.7.1/antlr4-runtime-4.7.1.jar:/Users/pere/.m2/repository/org/projectlombok/lombok/1.18.24/lombok-1.18.24.jar:/Users/pere/.m2/repository/org/apache/logging/log4j/log4j-core/2.19.0/log4j-core-2.19.0.jar:/Users/pere/.m2/repository/org/apache/logging/log4j/log4j-api/2.19.0/log4j-api-2.19.0.jar:/Users/pere/.m2/repository/org/slf4j/slf4j-api/2.0.1/slf4j-api-2.0.1.jar:/Users/pere/.m2/repository/org/slf4j/slf4j-reload4j/2.0.1/slf4j-reload4j-2.0.1.jar:/Users/pere/.m2/repository/ch/qos/reload4j/reload4j/1.2.22/reload4j-1.2.22.jar:/Users/pere/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.12.6.redhat-00002/jackson-annotations-2.12.6.redhat-00002.jar:/Users/pere/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.12.6.1-redhat-00004/jackson-databind-2.12.6.1-redhat-00004.jar:/Users/pere/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-yaml/2.12.6.redhat-00001/jackson-dataformat-yaml-2.12.6.redhat-00001.jar:/Users/pere/.m2/repository/org/yaml/snakeyaml/1.27.0.redhat-00001/snakeyaml-1.27.0.redhat-00001.jar:/Users/pere/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.12.6.redhat-00001/jackson-datatype-jsr310-2.12.6.redhat-00001.jar:/Users/pere/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.12.6.redhat-00001/jackson-datatype-jdk8-2.12.6.redhat-00001.jar:/Users/pere/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.12.6.redhat-00002/jackson-core-2.12.6.redhat-00002.jar:/Users/pere/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.8.1/junit-jupiter-engine-5.8.1.jar:/Users/pere/.m2/repository/org/junit/platform/junit-platform-engine/1.8.1/junit-platform-engine-1.8.1.jar:/Users/pere/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/pere/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.8.1/junit-jupiter-api-5.8.1.jar:/Users/pere/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/pere/.m2/repository/org/junit/platform/junit-platform-commons/1.8.1/junit-platform-commons-1.8.1.jar:/Users/pere/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.8.1/junit-jupiter-params-5.8.1.jar:/Users/pere/.m2/repository/org/junit/platform/junit-platform-suite/1.8.1/junit-platform-suite-1.8.1.jar:/Users/pere/.m2/repository/org/junit/platform/junit-platform-suite-api/1.8.1/junit-platform-suite-api-1.8.1.jar:/Users/pere/.m2/repository/org/junit/platform/junit-platform-suite-engine/1.8.1/junit-platform-suite-engine-1.8.1.jar:/Users/pere/.m2/repository/org/junit/platform/junit-platform-suite-commons/1.8.1/junit-platform-suite-commons-1.8.1.jar:/Users/pere/.m2/repository/org/junit/platform/junit-platform-launcher/1.8.1/junit-platform-launcher-1.8.1.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/pere"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2022-04-19"/>
+    <property name="java.home" value="/Users/pere/.sdkman/candidates/java/11.0.15-zulu/zulu-11.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/pere/work/gitops/policy-engine/core"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="jdk.vendor.version" value="Zulu11.56+19-CA"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="/Users/pere/work/gitops/policy-engine/core/target/surefire/surefirebooter14250965459131593750.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="11.0.15+10-LTS"/>
+    <property name="user.name" value="pere"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="10.15.7"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Zulu11.56+19-CA"/>
+    <property name="localRepository" value="/Users/pere/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="http://www.azul.com/support/"/>
+    <property name="java.io.tmpdir" value="/var/folders/rs/kfgm53k14xg4tmtrkl8f0q080000gn/T/"/>
+    <property name="java.version" value="11.0.15"/>
+    <property name="user.dir" value="/Users/pere/work/gitops/policy-engine/core"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.library.path" value="/Users/pere/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Azul Systems, Inc."/>
+    <property name="java.vm.version" value="11.0.15+10-LTS"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="java.class.version" value="55.0"/>
+  </properties>
+  <testcase name="shouldRaiseAnExceptionForInvalid" classname="com.purbon.kafka.policy.KafkaPolicyEngineTest" time="0.168"/>
+  <testcase name="shouldParseRulesSuccessfully" classname="com.purbon.kafka.policy.KafkaPolicyEngineTest" time="0.032"/>
+</testsuite>
