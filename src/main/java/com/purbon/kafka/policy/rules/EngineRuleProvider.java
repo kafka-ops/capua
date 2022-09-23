@@ -1,4 +1,4 @@
-package com.purbon.kafka.policy;
+package com.purbon.kafka.policy.rules;
 
 import java.io.IOException;
 

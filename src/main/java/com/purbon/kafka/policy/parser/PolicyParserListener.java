@@ -2,11 +2,11 @@ package com.purbon.kafka.policy.parser;
 
 
 import com.purbon.kafka.policy.Block;
-import com.purbon.kafka.policy.EngineRuleProvider;
+import com.purbon.kafka.policy.rules.EngineRuleProvider;
 import com.purbon.kafka.policy.RegoParser;
 import com.purbon.kafka.policy.RegoParserBaseListener;
-import com.purbon.kafka.policy.rules.ComparableRule;
-import com.purbon.kafka.policy.rules.StringFunctionRule;
+import com.purbon.kafka.policy.rules.types.ComparableRule;
+import com.purbon.kafka.policy.rules.types.StringFunctionRule;
 import lombok.Getter;
 import lombok.SneakyThrows;
 import org.slf4j.Logger;

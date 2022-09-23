@@ -1,7 +1,7 @@
-package com.purbon.kafka.policy;
+package com.purbon.kafka.policy.rules;
 
 
-import com.purbon.kafka.policy.rules.ComparableRule;
+import com.purbon.kafka.policy.rules.types.ComparableRule;
 
 import java.io.IOException;
 

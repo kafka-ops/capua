@@ -10,15 +10,17 @@ import java.util.List;
 
 public class Cmd {
 
-    public Cmd() {
+    private KafkaPolicyEngine engine;
 
+    public Cmd() {
+        engine = KafkaPolicyEngine.getInstance();
     }
 
     public List<String> parse(String file) {
         List<String> errors = new ArrayList<>();
         try {
             String content = load(Path.of(file));
-            errors = KafkaPolicyEngine.parse(content);
+            errors = engine.parse(content);
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -32,7 +34,6 @@ public class Cmd {
 
 
     public static void main(String[] args) throws IOException {
-
         String file = "kafka-policy.rego";
         Cmd cmd = new Cmd();
         cmd.parse(file);
@@ -42,7 +43,7 @@ public class Cmd {
 
     public void validate(String input) throws IOException {
        String content = load(Path.of(input));
-       var vr = KafkaPolicyEngine.validate(content);
+       var vr = engine.validate(content);
        System.out.println("Result: ");
        System.out.println(vr);
     }

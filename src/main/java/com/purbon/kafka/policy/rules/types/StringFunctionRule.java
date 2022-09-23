@@ -1,7 +1,5 @@
-package com.purbon.kafka.policy.rules;
+package com.purbon.kafka.policy.rules.types;
 
-import com.purbon.kafka.policy.rules.ComparableRule;
-import com.purbon.kafka.policy.rules.Rule;
 import lombok.Data;
 
 import java.util.ArrayList;

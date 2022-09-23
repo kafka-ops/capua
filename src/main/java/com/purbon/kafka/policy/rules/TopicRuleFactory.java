@@ -1,9 +1,9 @@
-package com.purbon.kafka.policy;
+package com.purbon.kafka.policy.rules;
 
 import com.purbon.kafka.policy.model.Topic;
-import com.purbon.kafka.policy.rules.ComparableRule;
-import com.purbon.kafka.policy.rules.TopicPartitionRule;
-import com.purbon.kafka.policy.rules.TopicReplicationFactorRule;
+import com.purbon.kafka.policy.rules.types.ComparableRule;
+import com.purbon.kafka.policy.rules.types.TopicPartitionRule;
+import com.purbon.kafka.policy.rules.types.TopicReplicationFactorRule;
 
 import java.io.IOException;
 

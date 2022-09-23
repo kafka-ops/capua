@@ -1,4 +1,4 @@
-package com.purbon.kafka.policy.rules;
+package com.purbon.kafka.policy.rules.types;
 
 public interface ComparableRule<T> extends Rule {
 

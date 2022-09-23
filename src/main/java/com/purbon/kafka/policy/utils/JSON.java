@@ -1,4 +1,4 @@
-package com.purbon.kafka.policy;
+package com.purbon.kafka.policy.utils;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
