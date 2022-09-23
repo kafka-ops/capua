@@ -1,0 +1,13 @@
+{
+  "topics": [{
+    "name": "foo",
+    "partitions": 3,
+    "replicationFactor": 1,
+    "config": {}
+  }, {
+    "name": "bar",
+    "partitions": 1,
+    "replicationFactor": 1,
+    "config": {}
+  }]
+}
