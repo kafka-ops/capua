@@ -7,5 +7,5 @@ allow {
 }
 
 deny {
-    startswith(topic.name, "zet")
+    startswith(topic.name, "foo")
 }

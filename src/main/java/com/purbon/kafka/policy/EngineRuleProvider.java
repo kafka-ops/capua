@@ -2,17 +2,17 @@ package com.purbon.kafka.policy;
 
 import java.io.IOException;
 
-public class EngineRuleFactory implements RuleFactory {
+public class EngineRuleProvider implements RuleProvider {
 
-    private static EngineRuleFactory instance;
+    private static EngineRuleProvider instance;
 
-    private EngineRuleFactory() {
+    private EngineRuleProvider() {
 
     }
 
-    public static synchronized EngineRuleFactory getInstance() {
+    public static synchronized EngineRuleProvider getInstance() {
         if (instance == null) {
-            instance = new EngineRuleFactory();
+            instance = new EngineRuleProvider();
         }
         return instance;
     }

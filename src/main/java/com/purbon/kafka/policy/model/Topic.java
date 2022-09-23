@@ -3,12 +3,14 @@ package com.purbon.kafka.policy.model;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.ToString;
 
 import java.util.HashMap;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@ToString
 public class Topic {
 
     private String name;

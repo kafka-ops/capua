@@ -38,13 +38,12 @@ public class Cmd {
         cmd.parse(file);
 
         cmd.validate("input.json");
-
-
     }
 
     public void validate(String input) throws IOException {
-
        String content = load(Path.of(input));
-       KafkaPolicyEngine.validate(content);
+       var vr = KafkaPolicyEngine.validate(content);
+       System.out.println("Result: ");
+       System.out.println(vr);
     }
 }

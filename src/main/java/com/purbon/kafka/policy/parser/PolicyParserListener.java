@@ -1,7 +1,12 @@
-package com.purbon.kafka.policy;
+package com.purbon.kafka.policy.parser;
 
 
+import com.purbon.kafka.policy.Block;
+import com.purbon.kafka.policy.EngineRuleProvider;
+import com.purbon.kafka.policy.RegoParser;
+import com.purbon.kafka.policy.RegoParserBaseListener;
 import com.purbon.kafka.policy.rules.ComparableRule;
+import com.purbon.kafka.policy.rules.StringFunctionRule;
 import lombok.Getter;
 import lombok.SneakyThrows;
 import org.slf4j.Logger;
@@ -9,9 +14,9 @@ import org.slf4j.LoggerFactory;
 
 import java.util.Stack;
 
-public class RegoRuleListener extends RegoParserBaseListener {
+public class PolicyParserListener extends RegoParserBaseListener {
 
-    Logger logger = LoggerFactory.getLogger(RegoRuleListener.class);
+    Logger logger = LoggerFactory.getLogger(PolicyParserListener.class);
 
     @Getter
     private Stack<Block> blocks;
@@ -19,7 +24,7 @@ public class RegoRuleListener extends RegoParserBaseListener {
     private ComparableRule policyRule;
     private StringFunctionRule functionRule;
 
-    public RegoRuleListener() {
+    public PolicyParserListener() {
         blocks = new Stack<>();
         current = new Block();
         policyRule = null;
@@ -72,7 +77,7 @@ public class RegoRuleListener extends RegoParserBaseListener {
            String startToken = ctx.start.getText();
            String endToken = ctx.relationExpr(0).stop.getText();
 
-           var terminalRuleFactory = EngineRuleFactory
+           var terminalRuleFactory = EngineRuleProvider
                    .getInstance()
                    .create(startToken);
 

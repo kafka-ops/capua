@@ -1,11 +1,12 @@
 package com.purbon.kafka.policy;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
+import com.purbon.kafka.policy.parser.ParserThrowErrorListener;
+import com.purbon.kafka.policy.parser.PolicyParserListener;
 import com.purbon.kafka.policy.rules.ComparableRule;
-import com.purbon.kafka.policy.rules.Rule;
-import com.purbon.kafka.policy.rules.LiteralRule;
 import com.purbon.kafka.policy.model.Input;
 import com.purbon.kafka.policy.model.Topic;
+import com.purbon.kafka.policy.rules.StringFunctionRule;
 import com.purbon.kafka.policy.rules.TopicRule;
 import lombok.Getter;
 import org.antlr.v4.runtime.CharStreams;
@@ -31,9 +32,9 @@ public class KafkaPolicyEngine {
         return instance.getErrors();
     }
 
-    public static void validate(String content) throws JsonProcessingException {
-        Input input = (Input)JSON.toObject(content, Input.class);
-        instance.verify(input);
+    public static VerifyResult validate(String content) throws JsonProcessingException {
+        Input input = (Input) JSON.toObject(content, Input.class);
+        return instance.verify(input);
     }
 
     private static KafkaPolicyEngine instance;
@@ -59,19 +60,21 @@ public class KafkaPolicyEngine {
         parser.addErrorListener(ParserThrowErrorListener.INSTANCE);
 
         ParseTreeWalker walker = new ParseTreeWalker();
-        RegoRuleListener listener = new RegoRuleListener();
+        PolicyParserListener listener = new PolicyParserListener();
 
         walker.walk(listener, parser.root());
 
         blocks = listener.getBlocks();
 
         for(Block block : blocks) {
-            logger.debug(block.toString());
+            logger.trace(block.toString());
         }
     }
 
-    public void verify(Input input) {
-       for(Topic topic : input.getTopics()) {
+    public VerifyResult verify(Input input) {
+        VerifyResult vr = new VerifyResult();
+        for(Topic topic : input.getTopics()) {
+            vr.addEntity(topic.toString());
             for(Block block : blocks) {
                 boolean result = true;
                 for(ComparableRule rule : block.getRules()) {
@@ -85,9 +88,9 @@ public class KafkaPolicyEngine {
                         result &= isValid;
                     }
                 }
-                System.out.println(block.getType() + " : "+result);
+                vr.addType(topic.toString(), block.getType(), result);
             }
-            System.out.println("");
-       }
+        }
+        return vr;
     }
 }

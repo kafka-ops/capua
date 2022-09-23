@@ -1,4 +1,4 @@
-package com.purbon.kafka.policy;
+package com.purbon.kafka.policy.parser;
 
 import org.antlr.v4.runtime.BaseErrorListener;
 import org.antlr.v4.runtime.RecognitionException;
