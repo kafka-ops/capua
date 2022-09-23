@@ -63,4 +63,3 @@ com/purbon/kafka/policy/parser/PolicyParserListener.class
 com/purbon/kafka/policy/model/Topic.class
 com/purbon/kafka/policy/RegoParser$FactorExprContext.class
 com/purbon/kafka/policy/rules/types/TopicReplicationFactorRule.class
-com/purbon/kafka/Cmd.class
