@@ -6,6 +6,7 @@ A Kafka Policy engine that will help you validate your resources and artefact cr
 
 Please if you have feedback and/or are willing to contribute this project to move further don't hesitate to open issues and/or contact me directly.
 
+<img src="https://raw.githubusercontent.com/kafka-ops/capua/main/img/capua.jpeg" alt="capua" width="640" height="480"/>
 
 ### Introduction
 
@@ -18,7 +19,7 @@ With Capua, we intend to create a Policy engine (on the shoulders of known solut
 As a user of Capua it will be possible for you to:
 
 * Define, in an easy, proven and known JSON like language, the policies your deployed "things" have to follow. 
-  The policy language is based on (Rego)[https://www.openpolicyagent.org/docs/latest/policy-language/], the Open Policy Agent language.
+  The policy language is based on [Rego](https://www.openpolicyagent.org/docs/latest/policy-language/), the Open Policy Agent language.
 * Verify the resource creation requests in multiple ways such as using a CLI, a Rest API, Container(s), etc.
 
 
