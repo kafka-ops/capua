@@ -10,20 +10,20 @@ import java.util.Map;
 public class VerifyResult {
 
     @Getter
-    Map<String, Map<String, Boolean>> summary;
+    Map<String, Map<String, Boolean>> topics;
 
     public VerifyResult() {
-       this.summary = new HashMap<>();
+       this.topics = new HashMap<>();
     }
 
     public void addEntity(String entity) {
-        if (!summary.containsKey(entity)) {
-            summary.put(entity, new HashMap<>());
+        if (!topics.containsKey(entity)) {
+            topics.put(entity, new HashMap<>());
         }
     }
 
     public void addType(String entity, String type, Boolean result) {
        addEntity(entity);
-       summary.get(entity).put(type, result);
+       topics.get(entity).put(type, result);
     }
 }

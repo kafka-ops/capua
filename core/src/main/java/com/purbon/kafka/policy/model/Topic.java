@@ -10,7 +10,6 @@ import java.util.HashMap;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@ToString
 public class Topic {
 
     private String name;
@@ -21,5 +20,10 @@ public class Topic {
 
     public Topic(String name, int partitions, short replicationFactor) {
         this(name, partitions, replicationFactor, new HashMap<>());
+    }
+
+    @Override
+    public String toString() {
+        return name;
     }
 }
