@@ -7,11 +7,13 @@
     <artifactId>capua</artifactId>
     <version>0.0.1</version>
   </parent>
+
   <groupId>com.purbon.kafka.policy</groupId>
   <artifactId>cli</artifactId>
   <version>0.0.1</version>
   <name>cli</name>
   <url>http://maven.apache.org</url>
+
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
